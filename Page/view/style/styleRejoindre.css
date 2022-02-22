@@ -1,0 +1,103 @@
+/* =================================================
+====================================================
+Page rejoindre reservation
+====================================================
+====================================================*/
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.reservation_choix {
+  text-align: center;
+}
+
+.reservation_choix table {
+  /* display: flex;
+  justify-content: center; */
+  /* margin-top: 2em;
+  margin-bottom: 5em; */
+	margin: 10em auto;
+}
+
+.reservation_choix table thead tr:nth-of-type(1) {
+  background-color: azure;
+}
+
+.reservation_choix table tr {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  border: 1px solid black;
+  background-color: ghostwhite;
+  box-shadow: 10px 5px 5px lightgrey;
+}
+
+.reservation_choix .ligneC {
+  height: 3em;
+}
+
+.reservation_choix table td {
+  cursor: pointer;
+  height: 25px;
+}
+
+.reservation_choix table tr {
+  padding-left: 30px;
+}
+
+.reservation_choix table td,
+th {
+  color: darkslateblue;
+  text-decoration: none;
+  margin-left: 10px;
+  height: 18;
+  width: 127px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .reservation_choix thead {
+    display: none;
+  }
+
+  .reservation_choix tr {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .reservation_choix td {
+    display: block;
+    text-align: right;
+  }
+
+  .reservation_choix td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+		padding-right: 10px;
+  }
+
+	.reservation_choix table td, .reservation_choix table th{
+		height: auto;
+		width: auto;
+		margin: 4px;
+	}
+
+	.reservation_choix table {
+		display: flex;
+		margin: 10em auto;
+		justify-content: center;
+	}
+
+	.reservation_choix .ligneC {
+		height: auto;
+	}
+
+.reservation_choix table tr {
+	display: block;
+}
+
+
+}

@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+}
+
+/* ------------------------------------ */
+
+table {
+  width: 75vw;
+  border: 0.5px solid black;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+/* ------------------------------------ */
+
+thead tr {
+  border-bottom: 1px solid black;
+}
+
+/* thead tr .title {
+  width: 90vw;
+  text-align: center;
+  padding: 0.2rem 0;
+} */
+
+thead tr:first-child div {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+thead tr:first-child div .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+thead tr:first-child div i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem 0;
+  width: 12.5%;
+}
+
+thead th {
+  height: 50px;
+  text-align: center;
+}
+
+thead .weekdays th {
+  width: 12.5%;
+}
+
+thead tr:nth-child(2) th:first-child {
+  width: 5%;
+}
+
+thead tr:nth-child(2) th:first-child i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid black;
+}
+
+thead tr th i:hover {
+  background-color: #0cafd3;
+}
+
+thead tr th i:active {
+  background-color: #ccc;
+}
+
+/* ------------------------------------ */
+
+tbody tr:nth-child(even) {
+  border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:last-child {
+  border-bottom: 1px solid black;
+}
+
+tbody tr th {
+  padding: 0.1rem 0;
+  border-right: 1px solid black;
+  text-align: center;
+  width: 5%;
+}
+
+tbody tr:nth-child(even) th {
+  opacity: 70%;
+  font-weight: normal;
+}
+
+.reservation {
+  text-align: center;
+  border: 1px solid black;
+}
+
+
+/* ------------------------------------ */
+
+/* Fomrulaire de l'agenda */
+.formAgenda {
+  padding: 1em;
+  border: 1px solid #0cafd3;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2px 3.5em;
+}
+
+.formAgenda input {
+  margin: 0em 1em;
+  padding: 0px 16px;
+  background-image: linear-gradient(to right, #6ec1e4, #0cafd3);
+  border-radius: 6px;
+}
+
+.formAgenda + h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--couleur-bleu);
+}
+
+.formAgenda label {
+  font-family: "Soljik-Dambaek", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

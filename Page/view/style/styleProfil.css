@@ -1,0 +1,312 @@
+/* =================================================
+====================================================
+Style page de profil, page de modification profil
+et page de modification de mot de passe (même style)
+====================================================
+====================================================*/
+
+.profil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 150%;
+}
+
+.profil h3{
+  margin: 0em;
+  padding: 1em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: normal;
+  font-size: 200%;
+}
+
+.profil>div{
+  margin-top: 4em;
+  border-left: solid var(--couleur-bleu);
+  box-shadow: #9E9E9E 1.95px 1.95px 5px;
+  padding: 0px 30px 0px 30px;
+}
+
+.profil form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial sans-serif;
+  font-size: 60%;
+}
+
+.profil output{
+  display: flex;
+  width: 600px;
+  margin: 10px auto 10px auto;
+  border: solid var(--couleur-bleu) 1px;
+  border-radius: 10px;
+  padding: 10px;
+  color: grey;
+}
+
+.profil a{
+  color: grey;
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+.profil a:hover{
+  color: var(--couleur-bleu);
+}
+
+.profil section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profil output[target="message"]{
+  color: #32a852;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.profil output[target="erreur"]{
+  color: red;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.profil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 150%;
+}
+
+.profil h3{
+  margin: 0em;
+  padding: 1em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: normal;
+  font-size: 200%;
+}
+
+.profil>div{
+  margin-top: 4em;
+  border-left: solid var(--couleur-bleu);
+  box-shadow: #9E9E9E 1.95px 1.95px 5px;
+  padding: 0px 30px 0px 30px;
+}
+
+.profil form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial sans-serif;
+  font-size: 60%;
+}
+
+.profil output{
+  display: flex;
+  width: 600px;
+  margin: 10px auto 10px auto;
+  border: solid var(--couleur-bleu) 1px;
+  border-radius: 10px;
+  padding: 10px;
+  color: grey;
+}
+
+.profil a{
+  color: grey;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.profil a:hover{
+  color: var(--couleur-bleu);
+}
+
+.profil section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profil output[target="message"]{
+  color: #32a852;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.profil output[target="erreur"]{
+  color: red;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.profil input[type="password"] {
+    background-color: white;
+}
+
+
+.profilResa{
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 150%;
+  margin: 4em 1em 1em 1em;
+  border-left: solid var(--couleur-bleu);
+  box-shadow: #9E9E9E 1.95px 1.95px 5px;
+  /* overflow-x: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilResa a{
+  text-decoration: none;
+  color: var(--couleur-bleu);
+}
+
+.profilResa table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.profilResa tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
+/* affichage tableau des reservation */
+.profilResa thead tr:nth-child(1){
+  border: 1px solid grey;
+  padding: 2px 1em;
+  border-bottom: 3px solid grey;
+}
+
+.profilResa td{
+  border: 1px solid grey;
+  text-align: left;
+  padding: 8px;
+}
+
+
+/* =================================================
+====================================================
+Page de modification du profil
+====================================================
+====================================================*/
+
+.profil input{
+  display: flex;
+  width: 600px;
+  margin: 10px auto 10px auto;
+  border: solid var(--couleur-bleu) 1px;
+  border-radius: 10px;
+  padding: 10px;
+  color: grey;
+}
+
+.profil input[type="submit"], .profil input[type="button"]{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 25vw;
+  margin: 3em 15em 0em 15em;
+  border: solid var(--couleur-bleu) 1px; /*pour eviter un décalge quand y'a le hoover*/
+  color: white;
+  background-color: var(--couleur-bleu);
+}
+
+.profil input[type="submit"]:hover, .profil input[type="button"]:hover{
+  color: var(--couleur-bleu);
+  background-color: white;
+  border: solid var(--couleur-bleu) 1px;
+  border-radius: 10px;
+}
+
+.profil p{
+  color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+/* =================================================
+====================================================
+Responsive pour les éléments hors BootStrap
+====================================================
+====================================================*/
+
+@media screen and (max-width: 576px) {
+  .profil output {
+    width: 17em;
+  }
+}
+
+@media screen and (max-width: 760px){
+
+  .profil{
+    display: block;
+    margin: 10px;
+  }
+
+  .profil output {
+    width: 17em;
+  }
+
+  .profil input {
+    width: 17em;
+  }
+
+  .profil input[type="submit"], .profil input[type="button"] {
+    width: 15em;
+  }
+
+  /* mise en responsive des reservations du profil */
+  .profilResa thead{
+    display: none;
+  }
+
+  .profilResa tr{
+    display: block;
+    margin-bottom: 5em;
+  }
+
+  .profilResa td{
+    display: block;
+    text-align: right;
+  }
+
+  .profilResa td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+
+  .profilResa th, .profilResa td {
+    width: auto;
+  }
+
+  .profilResa tr:nth-child(1) {
+    padding: 0;
+    border-bottom: none;
+    border: none;
+  }
+
+  .profilResa h2 {
+    padding: 1em;
+  }
+
+  .profilResa {
+    border-left: none;
+    margin: 4em 10px 0em 10px;
+  }
+
+}

@@ -1,0 +1,217 @@
+/* =================================================
+====================================================
+Page d'accueil
+====================================================
+====================================================*/
+
+#section_accueil {
+  color: var(--couleur-gris);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+#section_accueil h2 {
+  background-image: url("../images/trait_bleu.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* font-size: 12vh; */
+  display: flex;
+  justify-content: center;
+}
+
+#section_accueil p {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+#section_accueil article div {
+  margin: 3em;
+}
+
+#section_accueil li {
+  font-size: 1.2rem;
+  text-align: left;
+  list-style: none;
+}
+
+#section_accueil article:nth-child(2) div {
+  margin: 3em 11em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#section_accueil article:nth-child(3) div {
+  margin-left: 11em;
+}
+
+#section_accueil article:nth-child(4) p {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+#section_accueil article:nth-child(4) img {
+  width: 30vw;
+}
+
+#section_accueil article:nth-child(4) > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  justify-content: space-evenly;
+}
+
+#section_accueil article:nth-child(4) > div > div {
+  margin: 0em;
+}
+
+/* =================================================
+Bannière
+====================================================*/
+.bannierediv {
+  background-image: url(../images/christina.jpg);
+  /*  background-image: url(../images/bann.png);
+     background-size: 100%;
+     background-repeat: no-repeat; */
+  background-size: cover;
+  background-position-y: center;
+  color: none;
+  animation: myAnim 1s ease 0s 1 reverse forwards;
+}
+
+.bannierediv h1 {
+  /*text-shadow: 2px 1px;*/
+  color: var(--couleur-bleu);
+}
+.bannierediv h2 {
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.paraBanni {
+	border: 3px solid var(--couleur-bleu);
+	border-radius: 10px;
+	background: rgba(40, 199, 225, 0.4);
+}
+
+.paraBanni p {
+	margin: 2px;
+	color: #f0feff;
+	font-weight: bold;
+}
+
+/* @keyframes myAnim {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+} */
+
+/*  Style carousel */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#carouselExemple {
+    /*width: 50%;*/
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: auto;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/60/60775.png");
+}
+
+.carousel-control-next-icon {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/60/60758.png");
+}
+
+.card-body {
+  background-image: linear-gradient(to right, #f0fcff, #c9f4ff);
+}
+
+.card {
+  margin: 5em;
+}
+
+/* =================================================
+====================================================
+Responsive pour les éléments hors BootStrap
+====================================================
+====================================================*/
+
+@media screen and (max-width: 760px) {
+  /* accueil */
+
+  #section_accueil {
+    padding: 1.5em;
+  }
+
+  #section_accueil p {
+    font-size: 1em;
+  }
+
+  #section_accueil li {
+    font-size: 1em;
+  }
+
+  #section_accueil h2 {
+    font-size: 6vh;
+  }
+
+  #section_accueil article {
+    margin: 0 auto 20px auto;
+    border: 1px solid #0cafd3;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+  }
+
+  #section_accueil article div {
+    margin: 0;
+  }
+
+  #section_accueil article:nth-child(2) div {
+    margin: 0em;
+    display: block;
+  }
+
+  #section_accueil article:nth-child(3) div {
+    margin-left: 0em;
+  }
+
+  .paraBanni p {
+    font-size: 15px;
+  }
+
+  #carouselExemple {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  /* accueil */
+  .bannierediv h1 {
+    color: navajowhite;
+  }
+
+
+
+}

@@ -1,0 +1,203 @@
+/* =================================================
+====================================================
+Page d'inscription et de connexion (même style)
+====================================================
+====================================================*/
+
+.inscriptionEtConnexion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 150%;
+}
+
+.inscriptionEtConnexion h3{
+  margin: 0em;
+  padding: 1em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: normal;
+  font-size: 200%;
+}
+
+.inscriptionEtConnexion p{
+  font-size: 150%;
+  color: grey;
+}
+
+.inscriptionEtConnexion section:nth-child(2) p{
+  margin-bottom: 5px;
+}
+
+.inscriptionEtConnexion div{
+  margin-top: 4em;
+  border-left: solid var(--couleur-bleu);
+  box-shadow: #9E9E9E 1.95px 1.95px 5px;
+  padding: 0px 30px 0px 30px;
+}
+
+
+
+.inscriptionEtConnexion section:nth-child(2){ /*déjà un compte*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.inscriptionEtConnexion section:nth-child(2) a{ /*lien connexion/inscription*/
+  text-decoration:none;
+  color: var(--couleur-bleu);
+  font-size: 130%;
+}
+
+.inscriptionEtConnexion section:nth-child(3){ /*inscription/connexion via*/
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 1px;
+}
+
+.inscriptionEtConnexion section:nth-child(3) ul{
+  list-style: none;
+  width: auto;
+  padding: 0em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inscriptionEtConnexion section:nth-child(3) a{
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial sans-serif;
+  text-decoration: none;
+  background-color: var(--couleur-bleu);
+  color: white;
+  border: solid var(--couleur-bleu) 1px; /*pour eviter un décalge quand y'a le hoover*/
+  border-radius: 10px;
+  padding: 10px 100px;
+}
+
+.inscriptionEtConnexion section:nth-child(3) a:hover{
+  color: var(--couleur-bleu);
+  background-color: white;
+  border: solid var(--couleur-bleu) 1px;
+  border-radius: 10px;
+}
+
+.inscriptionEtConnexion section:nth-child(3) a ion-icon{
+  width: 2em;
+}
+
+.inscriptionEtConnexion section:nth-child(4){ /*remplissage des coordonnées*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 1px;
+}
+
+.inscriptionEtConnexion label{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  font-family: Arial sans-serif;
+  font-size: 60%;
+}
+
+.inscriptionEtConnexion input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: 10px auto 10px auto;
+  border: solid var(--couleur-bleu) 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.inscriptionEtConnexion input[type="submit"]{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:300px;
+  margin: 50px auto 50px auto;
+  border: solid var(--couleur-bleu) 1px; /*pour eviter un décalge quand y'a le hoover*/
+  color: white;
+  background-color: var(--couleur-bleu);
+}
+
+.inscriptionEtConnexion input[type="submit"]:hover{
+  color: var(--couleur-bleu);
+  background-color: white;
+  border: solid var(--couleur-bleu) 1px;
+  border-radius: 10px;
+}
+
+.inscriptionEtConnexion section:nth-child(4) form+p{
+  font-size: 60%;
+  font-family: Arial sans-serif;
+}
+
+/*message d'erreur (output)*/
+.inscriptionEtConnexion output{
+  font-weight: bold;
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+
+
+
+
+/* =================================================
+====================================================
+Responsive pour les éléments hors BootStrap
+====================================================
+====================================================*/
+
+@media screen and (max-width: 760px){
+  .inscriptionEtConnexion {
+    display: block;
+    margin: 10px;
+  }
+
+  .inscriptionEtConnexion section:nth-child(3) ul {
+    display: block;
+  }
+
+  .inscriptionEtConnexion section:nth-child(3) li {
+    padding: 10px 0;
+  }
+
+  .inscriptionEtConnexion input {
+    width:10em;
+  }
+
+  .inscriptionEtConnexion input[type="submit"] {
+    font-size: 30px;
+  }
+
+  .inscriptionEtConnexion section:nth-child(3) p:first-child {
+    text-align: center;
+  }
+
+  .inscriptionEtConnexion section:nth-child(3) a{
+    padding: 10px 30px;
+  }
+
+  .inscriptionEtConnexion td button {
+    padding: 5px 20px;
+  }
+
+  .inscriptionEtConnexion tbody {
+    background-color: white;
+  }
+}

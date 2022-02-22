@@ -1,0 +1,39 @@
+/* =================================================
+====================================================
+Page de message
+====================================================
+====================================================*/
+
+.message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message output{
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.message input{
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--couleur-bleu);
+    color: white;
+    background-color: var(--couleur-bleu);
+    border-radius: 5px;
+    padding: 0.1em 0.6em;
+    margin: 2em 0em;
+}
+
+.message input:hover{
+  color: var(--couleur-bleu);
+  background-color: white;
+  border: solid var(--couleur-bleu) 1px;
+}
+
+.green {
+  color: var(--couleur-bleu);
+}

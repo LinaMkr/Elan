@@ -1,0 +1,814 @@
+/* =================================================
+====================================================
+Page d'administration
+====================================================
+====================================================*/
+
+#admin div{
+  display: flex;
+  justify-content: center;
+}
+
+#admin ul{
+  padding: 0;
+}
+
+#admin li{
+  list-style: none;
+  width: 20em;
+  padding: 2em;
+  margin: 4em 2em;
+  border-left: solid var(--couleur-bleu);
+  box-shadow: #9E9E9E 1.95px 1.95px 5px;
+  display: flex;
+}
+
+#admin a{
+  text-decoration: none;
+  color: var(--couleur-bleu);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
+/* ==================================================
+=====================================================
+Page d'administration : Gestion Equipements/Services
+=====================================================
+=====================================================*/
+.adminGestionEquipementServicePrestataireExpert{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adminGestionEquipementServicePrestataireExpert h2{
+  /*font-size: 9vh;*/
+  margin-bottom: 1em;
+}
+
+.adminGestionEquipementServicePrestataireExpert h3{
+  font-size: 5vh;
+  color: var(--couleur-gris);
+  margin: 5vh 0vh 3vh 0vh;
+}
+
+/* affichage tableau des servives/equipements */
+.adminGestionEquipementServicePrestataireExpert table {
+  /* margin: 0vh 0vh 3vh 17vh; */
+  margin: auto;
+}
+
+.adminGestionEquipementServicePrestataireExpert tr:nth-child(odd){
+  background-color: #f0fcff;
+}
+
+.adminGestionEquipementServicePrestataireExpert th{
+  border: 1px solid grey;
+  border-bottom: 3px solid grey;
+  background-color: white;
+}
+
+.adminGestionEquipementServicePrestataireExpert td{
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+.adminGestionEquipementServicePrestataireExpert th, td{
+  width: 30vh;
+}
+
+/* style des boutons supprimer */
+
+.adminGestionEquipementServicePrestataireExpert td:last-child{
+  border: none;
+  width: 17vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.adminGestionEquipementServicePrestataireExpert button{
+  color: white;
+  background-color: var(--couleur-bleu);
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+}
+
+.adminGestionEquipementServicePrestataireExpert button:hover {
+  color: var(--couleur-bleu);
+  background-color: white;
+}
+
+/* formulaire de création d'un servive/equipement */
+.adminGestionEquipementServicePrestataireExpert section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.adminGestionEquipementServicePrestataireExpert form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em 3em;
+}
+
+.adminGestionEquipementServicePrestataireExpert select, .adminGestionEquipementServicePrestataireExpert input{
+  margin: 0.1em;
+  margin-bottom: 1em;
+  padding: 0.3em;
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+  width: 10em;
+  height: 2.2em;
+  background-color: white;
+}
+
+.adminGestionEquipementServicePrestataireExpert input[type="submit"]{
+  color: white;
+  background-color: var(--couleur-bleu);
+  padding: 0.3em;
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+}
+
+.adminGestionEquipementServicePrestataireExpert input[type="submit"]:hover{
+  color: var(--couleur-bleu);
+  background-color: white;
+}
+
+/* alignement des boutons */
+.adminGestionEquipementServicePrestataireExpert input[value="Affecter"]{
+  margin-top: 2em;
+}
+
+.adminGestionEquipementServicePrestataireExpert input[value="Ajouter"]{
+  margin-top: 2em;
+}
+
+.adminGestionEquipementServicePrestataireExpert h2+p{
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 150%;
+  border-left: solid var(--couleur-bleu);
+  box-shadow: #9E9E9E 1.95px 1.95px 5px;
+  /* overflow-x: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 1em;
+}
+
+.adminGestionEquipementServicePrestataireExpert div>p{
+  color: var(--couleur-gris);
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 4vh;
+}
+
+.adminGestionEquipementServicePrestataireExpert div{
+  margin-top: 5em;
+}
+
+/* style message de confirmation et d'erreur */
+.adminGestionEquipementServicePrestataireExpert output[target="message"]{
+  margin-bottom: 2em;
+  color: green;
+}
+
+.adminGestionEquipementServicePrestataireExpert output[target="erreur"]{
+  margin-bottom: 2em;
+  color: red;
+}
+/*---*/
+
+
+/* =====================================================
+========================================================
+Page d'administration : Gestion Evenements et Formations
+========================================================
+========================================================*/
+/* style message de confirmation et d'erreur */
+#adminAjoutEvenementFormation output[target="message"]{
+  margin-bottom: 2em;
+  color: green;
+}
+
+#adminAjoutEvenementFormation output[target="erreur"]{
+  margin-bottom: 2em;
+  color: red;
+}
+/*---*/
+
+#adminAjoutEvenementFormation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#adminAjoutEvenementFormation h2 {
+  margin-bottom: 1em;
+}
+
+#adminAjoutEvenementFormation h2+p {
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 150%;
+  border-left: solid var(--couleur-bleu);
+  box-shadow: #9e9e9e 1.95px 1.95px 5px;
+  /* overflow-x: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 1em;
+}
+
+#adminAjoutEvenementFormation h3 {
+  font-size: 5vh;
+  color: var(--couleur-gris);
+  margin: 5vh 0vh 3vh 0vh;
+}
+
+/* affichage tableau des évènements/formations */
+#adminAjoutEvenementFormation table {
+  margin: 0vh 0vh 3vh 17vh;
+}
+
+#adminAjoutEvenementFormation tr:nth-child(odd){
+  background-color: #f0fcff;
+}
+
+#adminAjoutEvenementFormation th{
+  border: 1px solid grey;
+  border-bottom: 3px solid grey;
+  background-color: white;
+}
+
+#adminAjoutEvenementFormation td{
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+#adminAjoutEvenementFormation th, td{
+  width: 30vh;
+}
+
+/* style des boutons supprimer */
+#adminAjoutEvenementFormation td:last-child{
+  border: none;
+  width: 17vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+#adminAjoutEvenementFormation button{
+  color: white;
+  background-color: var(--couleur-bleu);
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+}
+
+#adminAjoutEvenementFormation button:hover {
+  color: var(--couleur-bleu);
+  background-color: white;
+}
+
+/* formulaire de création d'un(e) évènement/formation */
+
+#adminAjoutEvenementFormation input[type="submit"] {
+  color: white;
+  background-color: var(--couleur-bleu);
+  /* margin-left: 2em; */
+  padding: 0.3em;
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+  margin-top: 3em;
+}
+
+#adminAjoutEvenementFormation input[type="submit"]:hover {
+  color: var(--couleur-bleu);
+  background-color: white;
+}
+
+#adminAjoutEvenementFormation label{
+  margin-top: 1em;
+}
+
+#adminAjoutEvenementFormation select, #adminAjoutEvenementFormation input {
+padding: 0.3em;
+border: 2px solid var(--couleur-bleu);
+border-radius: 5px;
+width: 15em;
+background-color: white;
+}
+
+#adminAjoutEvenementFormation form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#adminAjoutEvenementFormation div>p{
+  color: var(--couleur-gris);
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 4vh;
+}
+
+#adminAjoutEvenementFormation div{
+  margin-top: 5em;
+}
+
+
+/* =================================================
+====================================================
+Page d'Administration : Statistiques
+====================================================
+====================================================*/
+
+#adminStatistiques {
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* y avait un souci ici du coup faut que je mette ca sur ssh */
+#adminStatistiques h2,#adminStatistiques h3{
+  font-size: 4rem;
+  font-family: "Soljik-Dambaek", Sans-serif;
+}
+
+/* régler décalage entre titre et valeur pour la premiere colonne*/
+#adminStatistiques th:first-of-type{
+  margin-top: -0.5px;
+}
+
+#adminStatistiques table{
+  border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+
+#adminStatistiques th {
+  letter-spacing: 2px;
+}
+
+#adminStatistiques td {
+  text-align: right;
+}
+
+#adminStatistiques td, #adminStatistiques th {
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+}
+
+#adminStatistiques th:first-of-type{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15px;
+}
+
+/* affiche couleur un sur deux ligne */
+#adminStatistiques tr:nth-child(odd){
+  background-color: #f0fcff;
+}
+
+#adminStatistiques #b1{
+  width: 200px;
+  height: 23px;
+  color: white;
+  background-color: var(--couleur-bleu);
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+  padding-bottom: 1.7em;
+  margin: 4em 0em 3em 1.5em;
+}
+
+#adminStatistiques #b1:hover {
+  color: var(--couleur-bleu);
+  background-color: white;
+}
+
+#adminStatistiques #hidethat{
+  display: none;
+}
+
+
+/* =================================================
+====================================================
+Page d'Administration : Ajouter Article
+====================================================
+====================================================*/
+
+#adminAjouterArticle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* style tableau */
+#adminAjouterArticle table{
+  display: flex;
+  flex-direction: row;
+  border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+
+#adminAjouterArticle th {
+  letter-spacing: 2px;
+}
+
+#adminAjouterArticle td input[type=button]{
+  text-align: right;
+}
+
+#adminAjouterArticle td, #adminAjouterArticle th {
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+}
+
+#adminAjouterArticle th:first-of-type{
+  column-span: all;
+}
+
+/* style des boutons supprimer */
+
+#adminAjouterArticle td:last-child{
+  border: none;
+  width: 17vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+#adminAjouterArticle button{
+  color: white;
+  background-color: var(--couleur-bleu);
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+}
+
+#adminAjouterArticle button:hover {
+  color: var(--couleur-bleu);
+  background-color: white;
+}
+
+/* rendre un sur deux bleu les lignes*/
+#adminAjouterArticle tr:nth-child(even){
+  background-color: #f0fcff;
+}
+
+/* formulaire */
+
+#adminAjouterArticle form{
+  display: flex;
+  flex-direction: column;
+  width: 120vh;
+  height: 80vh;
+  background-color: ghostwhite;
+  border : 1px solid lightgrey;
+  box-shadow: #9E9E9E 1.95px 1.95px 5px;
+  text-align: center;
+  margin-top: 4em;
+  padding: 0em 1.5em 4em 1.5em;
+  margin-bottom: 3em;
+}
+
+#adminAjouterArticle input[type=text]{
+  border: none;
+  border-bottom: 1.5px solid lightblue;
+  width: 300px;
+  background-color: ghostwhite;
+  opacity: 0.6;
+}
+
+#adminAjouterArticle input[type=submit]{
+  margin-top: 1.5em;
+  color: white;
+  background-color: var(--couleur-bleu);
+  padding: 0.3em;
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+  margin-top: 0.7em;
+  margin : 3vh 40vh 0vh 40vh;
+}
+
+#adminAjouterArticle input[type="submit"]:hover{
+  color: var(--couleur-bleu);
+  background-color: white;
+}
+
+#adminAjouterArticle label,
+#adminAjouterArticle textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+#adminAjouterArticle textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px #999;
+}
+
+#adminAjouterArticle label {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+/* espacer l'input (nom, sujet) de l'input (entrez...)*/
+#adminAjouterArticle label:nth-of-type(3){
+  margin-top: 30px;
+}
+
+
+
+/* =================================================
+====================================================
+Page Admin : Gestion des Locaux
+====================================================
+====================================================*/
+
+#adminGestionLieux {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#adminGestionLieux h2 {
+    margin-bottom: 1em;
+}
+
+#adminGestionLieux h3 {
+  font-size: 5vh;
+  color: var(--couleur-gris);
+  margin: 5vh 0vh 3vh 0vh;
+}
+
+#adminGestionLieux table {
+  margin: 2em;
+  border-collapse: collapse;
+}
+
+/* rendre un sur deux bleu les lignes*/
+#adminGestionLieux tr:nth-child(odd){
+  background-color: #f0fcff;
+}
+
+#adminGestionLieux th{
+  background-color: white;
+}
+
+#adminGestionLieux td, #adminGestionLieux th {
+  border: 1px solid grey;
+  padding: 10px 20px 10px 20px;
+
+}
+
+#adminGestionLieux td:last-child{
+  border: none;
+  width: 17vh;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+/* style bouton supprimer */
+#adminGestionLieux button{
+  color: white;
+  background-color: var(--couleur-bleu);
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#adminGestionLieux button:hover {
+  color: var(--couleur-bleu);
+  background-color: white;
+}
+
+/* formulaire */
+#adminGestionLieux form{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0em 1.5em 1.5em 1.5em;
+  margin-top: 3em;
+}
+
+#adminGestionLieux select, #adminGestionLieux input {
+  padding: 0.3em;
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+  width: 15em;
+  background-color: white;
+}
+
+#adminGestionLieux label{
+  margin-top: 1em;
+}
+
+#adminGestionLieux input[type=submit]{
+  margin-top: 1.5em;
+  color: white;
+  background-color: var(--couleur-bleu);
+  padding: 0.3em;
+  border: 2px solid var(--couleur-bleu);
+  border-radius: 5px;
+}
+
+#adminGestionLieux input[type="submit"]:hover{
+  color: var(--couleur-bleu);
+  /*background-color: white;*/
+}
+
+#adminGestionLieux div>p{
+  color: var(--couleur-gris);
+  font-family: "Soljik-Dambaek", Sans-serif;
+  font-size: 4vh;
+}
+
+/* style message de confirmation et d'erreur */
+#adminGestionLieux output[target="message"]{
+  margin-bottom: 2em;
+  color: green;
+}
+
+#adminGestionLieux output[target="erreur"]{
+  margin-bottom: 2em;
+  color: red;
+}
+/*---*/
+
+
+/* =================================================
+====================================================
+Responsive pour les éléments hors BootStrap
+====================================================
+====================================================*/
+
+@media screen and (max-width: 576px) {
+  #admin li {
+    width: 17em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #admin div {
+    display: block;
+  }
+
+  #admin li {
+    width: auto;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+  }
+
+  /*responsive tableau*/
+  #adminAjoutEvenementFormation thead {
+    display: none;
+  }
+
+  #adminAjoutEvenementFormation tr {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  #adminAjoutEvenementFormation td {
+    display: block;
+    text-align: right;
+  }
+
+  #adminAjoutEvenementFormation td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+
+  #adminAjoutEvenementFormation td::before {
+    background-color: none;
+    padding-right: 10px;
+  }
+
+  #adminAjoutEvenementFormation th, td{
+    width: auto;
+  }
+
+  #adminAjoutEvenementFormation table {
+    margin: auto;
+  }
+
+  #adminAjoutEvenementFormation h2 {
+    font-size: none;
+  }
+
+  /*tableau service*/
+
+  .adminGestionEquipementServicePrestataireExpert thead {
+    display: none;
+  }
+
+  .adminGestionEquipementServicePrestataireExpert tr {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .adminGestionEquipementServicePrestataireExpert td {
+    display: block;
+    text-align: right;
+  }
+
+  .adminGestionEquipementServicePrestataireExpert td::before {
+    content: attr(data-label);
+    float: left;
+    padding-right: 10px;
+    font-weight: bold;
+  }
+
+  .adminGestionEquipementServicePrestataireExpert tbody {
+    background-color: none;
+  }
+
+  .adminGestionEquipementServicePrestataireExpert table {
+    margin: auto;
+  }
+
+  .adminGestionEquipementServicePrestataireExpert td:last-child{
+    width: auto;
+  }
+
+  #adminAjoutEvenementFormation td:last-child{
+    width: auto;
+  }
+
+  #adminAjoutEvenementFormation td button {
+    padding: 5px 20px;
+  }
+
+  #adminAjoutEvenementFormation tbody {
+    background-color: white;
+  }
+
+  #adminGestionLieux thead {
+    display: none;
+  }
+
+  #adminGestionLieux tr {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  #adminGestionLieux td {
+    display: block;
+    text-align: right;
+  }
+
+  #adminGestionLieux td::before {
+    content: attr(data-label);
+    float: left;
+    padding-right: 10px;
+    font-weight: bold;
+  }
+
+  #adminGestionLieux table {
+    margin: 2em;
+  }
+
+  #adminGestionLieux td:last-child {
+    width: auto;
+    }
+
+  #adminGestionLieux button {
+    margin: auto;
+  }
+
+  /* responsive formulaire  */
+
+  #adminAjouterArticle form {
+    width: auto;
+    height: auto;
+    margin: 2em;
+  }
+
+  #adminAjouterArticle {
+    display: block;
+  }
+
+  #adminAjouterArticle input[type=submit] {
+    margin: 1em;
+  }
+
+
+
+
+}

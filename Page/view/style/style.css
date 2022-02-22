@@ -1,0 +1,53 @@
+/* =================================================
+====================================================
+Pour toutes les pages
+====================================================
+====================================================*/
+:root {
+  --couleur-bleu: #0cafd3;
+  --couleur-gris: #7a7a7a;
+}
+
+@font-face {
+  font-family: "Soljik-Dambaek";
+  src: url("../fonts/Soljik-Dambaek.ttf");
+}
+
+@font-face {
+  font-family: "Bernado Moda";
+  src: url("../fonts/Bernardo Moda.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Soljik-Dambaek", sans-serif;
+}
+
+.etoiles_obligatoire {
+  color: red;
+}
+
+/* =================================================
+Fil d'ariane
+====================================================*/
+.fil_ariane {
+  margin-left: 3em;
+}
+
+.fil_ariane a {
+  text-decoration: none;
+  color: var(--couleur-bleu);
+}
